@@ -12,7 +12,6 @@ body {
  */
 .bgimage {
     position: relative;
-    padding: 1em;
 }
 
 .bgimage>img {
@@ -22,7 +21,7 @@ body {
     width: 100%;
     height: auto;
     opacity: 0.3;
-    border-radius: 1rem;
+    border-radius: 2rem;
     z-index: -1;
 }
 
@@ -89,7 +88,8 @@ main {
     padding: 2rem;
 }
 
-main div:not(:last-of-type) {
+main div:not(:last-of-type),
+main section:not(:last-of-type) {
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--main-color);
     border-radius: 0.5rem;
