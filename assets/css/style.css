@@ -1,0 +1,107 @@
+html {
+    --main-color: #455839;
+}
+
+body {
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
+/*
+ * Image de fond
+ */
+.bgimage {
+    position: relative;
+    padding: 1em;
+}
+
+.bgimage>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    border-radius: 1rem;
+    z-index: -1;
+}
+
+/*
+ * Général
+ */
+header,
+main,
+footer {
+    border-bottom: 5px solid var(--main-color);
+    border-top: 5px solid var(--main-color);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*
+ * Header
+ */
+header {
+    display: flex;
+    justify-content: start;
+}
+
+.title {
+    position: relative;
+    flex-grow: 4;
+}
+
+.logo {
+    margin-top: 1rem;
+}
+
+header h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 50%;
+    min-width: 400px;
+    list-style: none;
+}
+
+header nav li a {
+    color: var(--main-color);
+    font-style: italic;
+}
+
+/*
+ * Main
+ */
+main {
+    padding: 2rem;
+}
+
+main div:not(:last-of-type) {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 0.5rem;
+}
+
+/*
+ * Footer
+ */
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+footer li a {
+    color: var(--main-color);
+    font-style: italic;
+}
