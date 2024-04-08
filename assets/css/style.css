@@ -38,6 +38,10 @@ footer {
     margin-bottom: 2rem;
 }
 
+a {
+    color: var(--main-color);
+}
+
 /*
  * Header
  */
@@ -75,7 +79,6 @@ header nav ul {
 }
 
 header nav li a {
-    color: var(--main-color);
     font-style: italic;
 }
 

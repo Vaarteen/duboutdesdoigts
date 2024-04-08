@@ -1,0 +1,47 @@
+/*
+ * Page tarifs
+ */
+
+.strong {
+    font-weight: bold;
+}
+
+.indent {
+    padding-left: 2rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--main-color);
+    border-collapse: collapse;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 2px 5px;
+}
+
+td:last-of-type:not([colspan]) {
+    text-align: center;
+}
+
+/*
+ * Citation
+ */
+blockquote {
+    font-style: italic;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
