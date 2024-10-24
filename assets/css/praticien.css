@@ -1,0 +1,22 @@
+.diplomes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    position: relative;
+}
+
+.diplomes img {
+    width: 48%;
+    object-fit: contain;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+main {
+    position: relative;
+    z-index: -2;
+    background-color: #eee;
+}

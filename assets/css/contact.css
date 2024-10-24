@@ -1,0 +1,12 @@
+.grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid>* {
+    width: 48%;
+}
+
+main div .no-border {
+    border: none;
+}

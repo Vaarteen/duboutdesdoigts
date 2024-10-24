@@ -29,6 +29,12 @@ td:last-of-type:not([colspan]) {
     text-align: center;
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 80%;
+}
+
 /*
  * Citation
  */
