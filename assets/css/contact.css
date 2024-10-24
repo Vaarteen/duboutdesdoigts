@@ -10,3 +10,13 @@
 main div .no-border {
     border: none;
 }
+
+@media screen and (max-width: 900px) {
+    .grid {
+        flex-direction: column;
+    }
+
+    .grid>* {
+        width: 98%;
+    }
+}

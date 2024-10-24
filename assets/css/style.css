@@ -3,6 +3,10 @@
     src: url(../fonts/NimbusSanL-Reg.otf)
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     --main-color: #455839;
     --bgcolor: #d7e1d1;
@@ -76,13 +80,15 @@ header h1 {
     text-align: center;
 }
 
-header nav {
+#hamburger,
+#hamburger-logo {
+    display: none;
+}
+
+nav {
     position: absolute;
     right: 0;
     top: 0;
-}
-
-header nav ul {
     display: flex;
     justify-content: space-around;
     max-width: 50%;
@@ -90,7 +96,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav li a {
+nav a {
     font-style: italic;
 }
 
@@ -129,4 +135,63 @@ footer ul {
 footer li a {
     color: var(--main-color);
     font-style: italic;
+}
+
+@media screen and (max-width: 900px) {
+    .bgimage {
+        display: none;
+    }
+
+    .menu {
+        position: fixed;
+        width: 0;
+    }
+
+    #hamburger-logo {
+        display: block;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        background-color: var(--bgcolor);
+        width: 40px;
+        color: var(--main-color);
+        text-align: right;
+        transform: translateX(-205px);
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        background-color: var(--bgcolor);
+        overflow: hidden;
+        width: 200px;
+        min-width: 200px;
+        transform: translateX(-200px);
+    }
+
+    #hamburger-logo,
+    nav {
+        transition: 0.7s;
+    }
+
+    #hamburger:checked~#hamburger-logo,
+    #hamburger:checked~nav {
+        transform: translateX(0);
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: white;
+    }
+
+    main ul li {
+        width: 95%;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
 }

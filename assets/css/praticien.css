@@ -20,3 +20,9 @@ main {
     z-index: -2;
     background-color: #eee;
 }
+
+@media screen and (max-width: 900px) {
+    .diplomes img {
+        width: 98%;
+    }
+}
